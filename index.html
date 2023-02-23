@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra clone</title>
+    <link rel="icon" href="data:image/png;base64,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">
+
+    <!-- Font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Utils CSS  -->
+    <link rel="stylesheet" href="utils.css">
+</head>
+<body>
+
+    <header>
+        <div class="box-shadow">
+
+            <!-- navbar  -->
+            <nav class="container flex space-between roboto-font">
+                <div class="left flex items-center">
+                    <img class="myntra-logo" src="https://images.indianexpress.com/2021/01/myntra.png" alt="">
+                    <ul class="menu flex">
+                        <li class="menu-item">
+                            <a href="">MEN</a>
+                            <ul class="sub-menu container">
+                                <li class="sub-menu-item-heading"><strong>Men Heading</strong></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                                <hr>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">WOMEN</a>
+                            <ul class="sub-menu container">
+                                <li class="sub-menu-item-heading"><strong>Women Heading</strong></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                                <hr>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">KIDS</a>
+                            <ul class="sub-menu container">
+                                <li class="sub-menu-item-heading"><strong>Kids Heading</strong></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                                <hr>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">HOME & LIVING</a>
+                            <ul class="sub-menu container">
+                                <li class="sub-menu-item-heading"><strong>Home & Living Heading</strong></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                                <hr>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">BEAUTY</a>
+                            <ul class="sub-menu container">
+                                <li class="sub-menu-item-heading"><strong>Beauty Heading</strong></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                                <hr>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">STUDIO</a>
+                            <ul class="sub-menu container">
+                                <li class="sub-menu-item-heading"><strong>Studio Heading</strong></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                                <hr>
+                                <li class="sub-menu-item"><a href="">sub-menu-item01</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item02</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item03</a></li>
+                                <li class="sub-menu-item"><a href="">sub-menu-item04</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right flex items-center">
+                    <i class="fa-solid fa-magnifying-glass search-glass"></i>
+                    <input class="search-bar" placeholder= "Search for products, brands and more" type="text">
+                    <div class="profile mx-2"><i class="fa-regular fa-user profile-icon"></i><a href="">profile</a></div>
+                    <div class="wishlist mx-2"><i class="fa-regular fa-heart wishlist-icon"></i><a href="">wishlist</a></div>
+                    <div class="bag mx-2"><i class="fa-solid fa-bag-shopping bag-icon"></i><a href="">bag</a></div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </header>
+
+
+
+    <main class="container">
+
+        <!-- Carousel  -->
+        <section>
+            <div class = "slider">
+                <div class="slides  flex">
+                    <!-- radio buttons start -->
+                    <input type="radio" name = "radio-btn" id = "radio1">
+                    <input type="radio" name = "radio-btn" id = "radio2">
+                    <input type="radio" name = "radio-btn" id = "radio3">
+                    <input type="radio" name = "radio-btn" id = "radio4">
+                    <input type="radio" name = "radio-btn" id = "radio5">
+                    <!-- radio buttons end -->
+
+                    <!-- slide images start  -->
+                    <div class="slide first">
+                        <img class="slide-images" src="images/carousel-1.png" alt="">
+                    </div>
+                    <div class="slide first">
+                        <img class="slide-images" src="images/carousel-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-images" src="images/carousel-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-images" src="images/carousel-4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-images" src="images/carousel-5.png" alt="">
+                    </div>
+                    <!-- slide images end  -->
+
+                    <!-- Automatic Navigation start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+                    <!-- Automatic Navigation end  -->
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn btn1"></label>
+                    <label for="radio2" class="manual-btn btn2"></label>
+                    <label for="radio3" class="manual-btn btn3"></label>
+                    <label for="radio4" class="manual-btn btn4"></label>
+                    <label for="radio5" class="manual-btn btn5"></label>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+
+            <!-- DEAL OF THE DAY  -->
+            <div class="item1">
+                <div class="items-title roboto-font">
+                    <h2>DEAL OF THE DAY</h2>
+                </div>
+                <div class="items-list container flex">
+                    <a href="https://www.myntra.com/sports-apparel?f=Brand%3AHRX%20by%20Hrithik%20Roshan%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A65.0_100.0_65.0%20TO%20100.0&sort=popularity">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/44a9b614-4f67-4b5a-89e5-ee50f7d5f8681676819472882-HRX_Activewear_Min_65_off.png" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/footwear?f=Brand%3AASIAN%2CArrow%2CBata%2CCampus%2CHIGHLANDER%2CHush%20Puppies%2CLouis%20Philippe%2CMactree%2CMast%20%26%20Harbour%2CProvogue%2CRed%20Chief%2CRed%20Tape%2CRoadster%2CSparx%2CTommy%20Hilfiger%2CU.S.%20Polo%20Assn.%2CWROGN%2CWROGN%20ACTIVE%2CWoodland%3A%3ACategories%3ACasual%20Shoes%2CFormal%20Shoes%2CSports%20Shoes%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/ea799980-8939-4dc3-8bbe-72b3f63ab8e31676819472832-Casual_Shoes_Min_40_Off.png" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/men-footwear?f=Brand%3AASIAN%2CCampus%2CHIGHLANDER%2CRed%20Chief%2CRed%20Tape%2CSparx%2CU.S.%20Polo%20Assn.%2CWoodland%3A%3ACategories%3ACasual%20Shoes%2CSports%20Shoes">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/06d56cbf-0135-426a-a81a-b637c6f30dac1676819472817-Campus-_Highlander_Starting_499_1299.png" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/footwear?f=Brand%3AADIDAS%2CNike%2CPuma%2CReebok%2CReebok%20Classic%2CSkechers%3A%3ACategories%3ACasual%20Shoes%2CSports%20Shoes&sort=price_asc">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/216f9bdf-e348-4e9d-b108-f22ceafbf4911676819472966-Starting_1299_2499.png" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/apparel?f=Brand%3ADucati%2CHERE%26NOW%2CHRX%2CHRX%20by%20Hrithik%20Roshan%2CHarvard%2CHouse%20of%20Pataudi%2CInvictus%20Indoor%2CJustice%20League%2CKenneth%20Cole%2CKook%20N%20Keech%2CKook%20N%20Keech%20Batman%2CKook%20N%20Keech%20Disney%2CKook%20N%20Keech%20Marvel%2CKook%20N%20Keech%20Star%20Wars%2CKook%20N%20Keech%20Superman%2CMast%20%26%20Harbour%2CMinions%20by%20Kook%20N%20Keech%2CModa%20Rapido%2CMr%20Bowerbird%2CNautica%2CRoadster%2CRoadster%20Fast%20and%20Furious%2CSINGLE%2CSUICIDE%20SQUAD%2CSlazenger%2CSztori%2CWROGN%2Cether%3A%3ACategories%3AJeans%2CShirts%2CShorts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0&sort=recommended">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/6ecb87f9-bd94-4c0a-a64b-4692197d6be21676819472939-Roadster-_Here_-_Now_-_more___Flat_70_off.png" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/apparel?f=Brand%3ADenizen%20From%20Levis%2CLevis%2CMANGO%20MAN%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweaters%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/18e8fbf9-7702-4f58-95a4-7cdb69850e641676819472892-Mango_Man-_Levi-s-____Flat_50_off.png" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/apparel?f=Brand%3AH%26M%2CU.S.%20Polo%20Assn.%2CU.S.%20Polo%20Assn.%20Denim%20Co.%2CU.S.%20Polo%20Assn.%20Tailored%3A%3ACategories%3AJeans%2CShirts%2CShorts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/d3ab2a84-91c5-4137-b3b3-807b540bcc531676819472859-H-M-_USPA___STarting_399.png" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/sports-apparel?f=Brand%3AADIDAS%2CADIDAS%20Originals%2CASICS%2CAlcis%2CBlack%20Panther%2CBlissclub%2CC9%20AIRWEAR%2CCHKOKKO%2CCHKOKKO%20Plus%2CCultsport%2CPROWL%20by%20Tiger%20Shroff%2CPUMA%20Motorsport%2CPuma%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0&sort=popularity">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/19/cd86754f-29cc-4a42-b8f1-bce7218493031676819472927-Puma-_Nike_-_more_-min_40_off.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- BEST OF MYNTRA EXCLUSIVE BRANDS  -->
+            <div class="item2">
+                <div class="items-title roboto-font">
+                    <h2>BEST OF MYNTRA EXCLUSIVE BRANDS</h2>
+                </div>
+                <div class="items-list container flex">
+                    <a href="https://www.myntra.com/mfb-clearance">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2022/3/10/b25f89eb-fbeb-4013-829e-32ee5b5daaa01646895183668-Roadster-HRX_Unisex.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/mfb-brand?f=Categories%3AKurta%20Sets%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A50.0_66.0_50.0%20TO%2066.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/bfa5c871-a5a5-4d81-b46e-18aedccfdc9b1644407437913-Kurta_sets-_Anouk-_AAY_-_more.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/mfb-brand?f=Categories%3AKurtas%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A50.0_66.0_50.0%20TO%2066.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/046147d1-1874-4c10-adb9-6dbd88b606e71644407437923-Kurtas-_Anouk-_Sangria_-_more.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/mfb-brand?f=Categories%3ATops%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A10.0_66.0_10.0%20TO%2066.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/76acf345-fc62-4b49-8b2c-9c0fc9c925311644407437977-Tops_-_Dressberry-_AAY_-_more.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/mfb-brand?f=Brand%3AHERE%26NOW%2CRoadster%3A%3ACategories%3AShirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/3923c0c1-2260-4f0e-9598-15b6f9d7731c1644407437960-Roadster_and_H-N_Shirts.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/mfb-brand?f=Categories%3ADresses%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eb70855e-98c4-412d-bf20-50804546d57e1644407437883-Dresses_-_Dressberry-_Chemistry_-_more.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/mfb-brand?f=Brand%3AHarvard%2CKook%20N%20Keech%2CKook%20N%20Keech%20Batman%2CKook%20N%20Keech%20Disney%2CKook%20N%20Keech%20Marvel%2CRoadster%3A%3ACategories%3ATshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eff5a33f-ea24-4e70-84e5-ec4d25ee5c7b1644407437968-Roadster_and_KnK_Tshirts.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/mfb-brand?f=Categories%3ATshirts%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A10.0_66.0_10.0%20TO%2066.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/667a71f0-c24b-4a00-a98c-cc6a54a815e91644407437985-Tshirts_-_Roadster-_KnK_-_more.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- TOP  PICKS  -->
+            <div class="item3">
+                <div class="items-title roboto-font">
+                    <h2>TOP  PICKS</h2>
+                </div>
+                <div class="items-list container flex">
+                    <a href="https://www.myntra.com/kurta-sets?f=Gender%3Amen%20women%2Cwomen&rf=Price%3A199.0_1299.0_199.0%20TO%201299.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/062cea23-9a6a-44b9-bdd4-87cae6a462311645602543339-Kurta-sets.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/kurtas-women?rf=Price%3A299.0_799.0_299.0%20TO%20799.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/8d65d400-decd-4f42-902c-a40350a16ed11645602543346-Kurtas.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/dresses?f=Gender%3Amen%20women%2Cwomen&rf=Price%3A199.0_899.0_199.0%20TO%20899.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/398ee53b-5899-4a9a-9d0b-b35d60c01cb41645602543325-Dresses.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/jeans?f=Gender%3Amen%20women%2Cwomen&rf=Price%3A299.0_999.0_299.0%20TO%20999.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/2f410d81-7fae-400e-9ecc-b4a8b6df72b91645602543430-Women-Jeans.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/men-topwear?f=Categories%3AShirts&rf=Price%3A296.0_799.0_296.0%20TO%20799.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/82a9be01-3032-4725-9500-bcc94366b7931645602543399-Mens-Shirts.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/t-shirt?f=Gender%3Amen%2Cmen%20women&rf=Price%3A299.0_499.0_299.0%20TO%20499.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/c6b09c0f-5c57-472c-a3fc-854ec506a90e1645602543387-Men-T-shirt.jpg" alt="">
+                    </a>
+                    <a href="https://www.myntra.com/men-bottomwear?f=Categories%3ATrousers&rf=Price%3A449.0_899.0_449.0%20TO%20899.0">
+                        <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/f08e2bac-9bed-4f87-b022-0dce8defeded1645602543380-Men-Trousers.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+        
+    </main>
+
+
+    <footer>
+        <div class="footer roboto-font">
+            <div class="footer-container">
+                <div class="generic-info flex">
+
+
+                    <div class="online-shopping ">
+                        <div class="heading semibold font-small"><p>ONLINE SHOPPING</p></div>
+                        <div class="generic-info-list flex flex-col">
+                            <a href="https://www.myntra.com/shop/men">Men</a>
+                            <a href="https://www.myntra.com/shop/women">Women</a>
+                            <a href="https://www.myntra.com/shop/kids">Kids</a>
+                            <a href="https://www.myntra.com/shop/home-living">Home & Living</a>
+                            <a href="https://www.myntra.com/personal-care">Beauty</a>
+                            <a href="https://www.myntra.com/giftcard">Gift Cards</a>
+                            <a href="https://www.myntra.com/myntrainsider?cache=false">Myntra Insider</a>
+                            
+                            <div class="heading semibold font-small"><p>USEFUL LINKS</p></div>
+
+                            <a href="http://blog.myntra.com/">Blog</a>
+                            <a href="https://careers.myntra.com/">Careers</a>
+                            <a href="https://www.myntra.com/sitemap">Site Map</a>
+                            <a href="https://www.myntra.com/corp-info">Corporate Information</a>
+                            <a href="https://www.myntra.com/security/whitehat">Whitehat</a>
+
+                        </div>                    
+                    </div>
+
+                    <div class="customer-policies ml-6">
+                        <div class="heading semibold font-small"><p>CUSTOMER POLICIES</p></div>
+                        <div class="generic-info-list flex flex-col">
+                            <a href="https://www.myntra.com/contactus">Contact Us</a>
+                            <a href="https://www.myntra.com/faqs">FAQ</a>
+                            <a href="https://www.myntra.com/tac">T&C</a>
+                            <a href="https://www.myntra.com/termsofuse">Terms Of Use</a>
+                            <a href="https://www.myntra.com/my/orders">Track Orders</a>
+                            <a href="https://www.myntra.com/faqs#shipping">Shipping</a>
+                            <a href="https://www.myntra.com/faqs#cancel">Cancellation</a>
+                            <a href="https://www.myntra.com/faqs#returns">Returns</a>
+                            <a href="https://www.myntra.com/privacypolicy">Privay policy</a>
+                            <a href="https://www.myntra.com/termsofuse#23.%20Grievance%20Officer">Grievance Officer</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-myntra ml-6">
+                        <div class="heading semibold font-small"><p>EXPERIENCE MYNTRA APP ON MOBILE</p></div>
+                        <div class="generic-info-list flex flex-col">
+                            <div class="download">
+                                <a href="https://play.google.com/store/apps/details?id=com.myntra.android">
+                                    <img class="play-store" src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png" alt="">
+                                </a>
+                                <a href="https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059">
+                                    <img class="apple-store" src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="heading semibold font-small"><p>KEEP IN TOUCH</p></div>
+                                <div class="generic-info-list icons flex">
+                                    <a href="https://www.facebook.com/myntra">
+                                        <img src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png" alt="">
+                                    </a>
+                                    <a class="ml-2" href="https://twitter.com/myntra">
+                                        <img src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png" alt="">
+                                    </a>
+                                    <a class="ml-2" href="https://www.youtube.com/user/myntradotcom">
+                                        <img src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png" alt="">
+                                    </a>
+                                    <a class="ml-2" href="https://www.instagram.com/myntra">
+                                        <img src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+                    <div class="myntra-banners flex">
+                        <div class="banner-img flex flex-col my-2">
+                            <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="">
+                            <img src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png" alt="">
+                        </div>
+                        <div class="banner-para flex flex-col my-2">
+                            <div class="banner-para"><p><strong>100% ORIGINAL</strong>
+                                guarantee for all products at myntra.com </p>
+                            </div>
+                            <div class="banner-para"><p><strong>Return Within 30days</strong>
+                                of receiving your order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                   <p>&copy; myntra.com | All rights reserved</p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Javascript  -->
+    <script src="index.js"></script>
+</body>
+</html>

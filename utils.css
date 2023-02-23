@@ -1,0 +1,58 @@
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+
+.container {
+    width:fit-content;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.mx-2{
+    margin: 0px 8px;
+}
+
+.ml-2{
+    margin-left: 15px;
+}
+
+.ml-6{
+    margin-left: 50px;
+}
+
+.my-2 {
+    margin: 20px 0px;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px rgba(110, 110, 110, 0.197);
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.roboto-font {
+    font-family: 'roboto';
+    color: rgba(0, 0, 0, 0.799);
+}
+
+.font-small {
+    font-size: small;
+}

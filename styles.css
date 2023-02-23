@@ -1,0 +1,335 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    font-family: 'roboto';
+}
+
+hr {
+    position: relative;
+    left: 10px;
+    width: 90%;
+    border-top: 0px;
+    border-color: #95a1aa67;
+    margin: 10px 0px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+
+/* Navbar start  */
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+nav {
+    font-size: 15px;
+    flex-shrink: inherit;
+}
+
+a {
+    display: contents;
+    color: #36454F;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 12px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+.myntra-logo {
+    height: 65px;
+    margin-top: 10px; 
+}
+
+
+.left{
+    position: relative;
+}
+
+.search-bar {
+    z-index: 999;
+    font-size: medium;
+    outline: none;
+    padding-left: 50px;
+    height: 40px;
+    margin: auto 5%;
+    width: 35vw;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(239, 239, 239, 0.782);
+}
+
+.search-bar:focus {
+    background-color: white;
+    outline: 1px solid rgb(185, 185, 185);
+
+}
+
+.search-glass{
+    position: relative;
+    
+    left: 9%;
+}
+
+.profile-icon {
+    margin: 0px 10px;
+    
+}
+
+.wishlist-icon {
+    margin: 0px 15px;
+}
+
+.bag-icon {
+    margin: 0px 5px;
+}
+
+.menu-item .sub-menu{
+    z-index: 0;
+    position: absolute;
+    padding-top: 50px;
+    transform: translateY(20px);
+    background-color: white;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+    width: max-content; 
+}
+
+.sub-menu-item-heading {
+    margin-bottom:10px;
+}
+
+.sub-menu-item {
+    padding: 5px;
+}
+
+.menu-item:hover .bar1 {
+    opacity: 1;
+}
+
+.menu-item {
+    
+    padding-bottom: auto;
+}
+
+
+.menu-item:hover .sub-menu {
+
+    transform: translateY(0);
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+
+
+
+.dropdown-menu section {
+    margin: 0px 50px;
+}
+
+.men-dropdown-list ul li {
+    line-height: 1.7rem;
+}
+
+.men-dropdown-heading {
+    margin: 5px 0px;
+}
+
+.men-dropdown-heading a{
+    
+    color: #F88379;
+}
+/* Navabr end  */
+
+
+
+
+/* Main start */
+    /* carousel start */
+    .slider {    
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 500%;
+        height: 100%;
+        display: none;
+        z-index: -1;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide img{
+        width: 100%;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+    }
+
+    /* css for manual slide navgation  */
+    .navigation-manual {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .manual-btn {
+        background-color: #D3D3D3;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .manual-btn:active {
+        background: #36454F;
+    }
+
+    .mb1, .mb2, .mb3, .mb4, .mb5{
+        background: #36454F;
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -10%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -20%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -30%;
+    }
+
+    #radio5:checked ~ .first {
+        margin-left: -40%;
+    }
+    /* carousel end */
+
+
+
+    main.container {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    /* items start  */
+        
+    .items-title {
+        padding: 70px 20px;
+    }
+
+    .items-list {
+       flex-wrap: wrap
+    }
+
+    .items-list img{
+        width: calc(100% / 8);
+        height: auto;
+    }
+
+    .item3 img {
+        width: calc(100% / 7);
+        height: auto;
+    }
+
+    .item3 .items-list {
+        padding-bottom: 0px;
+    }
+    /* items end  */
+/* main end  */
+
+
+
+/* footer  */
+footer {
+    background-color: #e7e7e778;
+}
+
+.footer-container {
+    padding: 5% 16% ;
+    
+}
+
+.heading {
+    margin-top: 20px;
+}
+
+.generic-info-list a {
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    margin-top: 10px;
+}
+
+.play-store {
+    width: 140px;
+    height: auto;
+}
+
+.apple-store {
+    width: 123px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.icons img{
+    width: 20px;
+    height: 22px;
+
+}
+
+.myntra-banners {
+    margin-left: 100px;
+}
+
+
+.banner-para {
+    margin-left: 10px;
+    line-height: 1.5rem;
+    width: 230px;
+    color: grey;
+}
+
+.copyright {
+    color: grey;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.copyright p {
+    margin: 100px 0px;
+}
+/* footer end  */
